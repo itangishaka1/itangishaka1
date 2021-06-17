@@ -1,9 +1,5 @@
 ### Hi there, I'm Abdullah Itangishaka 👋
 
-
-
-Here are some ideas to get you started:
-
 - 🔭 I’m currently working on finding my first job as Frontend Developer.
 - 🌱 I’m currently learning Javascript and React JS
 - 👯 I’m looking to collaborate on Javascript Projects
@@ -12,4 +8,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: abdullahitangishaka@gmail.com
 - 😄 Pronouns: abdullah/itangishaka/@/gmail.com
 - ⚡ Fun fact: Thirsty of mastering Web Development.
--->
+
