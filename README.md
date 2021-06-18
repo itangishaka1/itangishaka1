@@ -1,6 +1,6 @@
 ### Hello World, I'm Abdullah Itangishaka 👋
 
-- ✍ You can find my projects here [portfolio]
+<!-- - ✍ You can find my projects here [portfolio] -->
 - 🔭 I’m currently working on finding my first job as Frontend Developer.
 - 🌱 I’m currently learning Javascript and React JS
 - 👯 I’m looking to collaborate on Javascript Projects
@@ -37,5 +37,5 @@ Email: abdullahitangishaka@gmail.com
 
 [linkedin]: https://www.linkedin.com/in/itangishaka
 [twitter]: https://twitter.com/itangishaka110
-[portfolio]: https://itangishaka1.github.io/
+<!--[portfolio]: https://itangishaka1.github.io/ -->
 
