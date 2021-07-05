@@ -37,5 +37,5 @@ Email: abdullahitangishaka@gmail.com
 
 [linkedin]: https://www.linkedin.com/in/itangishaka
 [twitter]: https://twitter.com/itangishaka110
-[project1]: https://itangishaka1.github.io/simple-website-using-html-and-css/
+[project1]: https://ecomerce-with-html-and-css.netlify.app/
 
