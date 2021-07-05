@@ -1,6 +1,7 @@
 ### Hello World, I'm Abdullah Itangishaka 👋
 
-- ✍ You can find my first project here [project1]
+- ✍ You can find my first portfolio here [portfolio]
+-  ✍ You can find my projects here [project-one] and [project-two]
 - 🔭 I’m currently working on finding my first job as Frontend Developer.
 - 🌱 I’m currently learning Javascript and React JS
 - 👯 I’m looking to collaborate on Javascript Projects
@@ -37,5 +38,7 @@ Email: abdullahitangishaka@gmail.com
 
 [linkedin]: https://www.linkedin.com/in/itangishaka
 [twitter]: https://twitter.com/itangishaka110
-[project1]: https://ecomerce-with-html-and-css.netlify.app/
+[portfolio]: https://abdullahweb.netlify.app/
+[project-one]: https://ecomerce-with-html-and-css.netlify.app/
+[project-two]: https://simple-website-using-html-and-css.netlify.app/
 
