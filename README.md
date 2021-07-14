@@ -38,7 +38,7 @@ Email: abdullahitangishaka@gmail.com
 
 [linkedin]: https://www.linkedin.com/in/itangishaka
 [twitter]: https://twitter.com/itangishaka110
-[portfolio]: https://abdullahweb.netlify.app/
+[portfolio]: https://itangishaka.netlify.app/
 [Ecommerce Website]: https://ecomerce-with-html-and-css.netlify.app/
 [project-two]: https://simple-website-using-html-and-css.netlify.app/
 
