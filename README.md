@@ -41,5 +41,5 @@ Email: abdullahitangishaka@gmail.com
 [portfolio]: https://itangishaka.netlify.app/
 [Ecommerce Website]: https://ecomerce-with-html-and-css.netlify.app/
 [project-two]: https://simple-website-using-html-and-css.netlify.app/
-[Bootstrap-5-siite]: https://bootstrap-5-site.netlify.app/
+[Bootstrap-5-site]: https://bootstrap-5-site.netlify.app/
 
