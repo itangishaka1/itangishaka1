@@ -1,8 +1,8 @@
 ### Hello World, I'm Abdullah Itangishaka 👋
 
 - ✍ You can find my first portfolio here [portfolio]
--  ✍ You can find my projects here [Ecommerce Website] and [project-two] and [Bootstrap-5-site]
-- 🔭 I’m currently working on finding my first job as Frontend Developer.
+-  ✍ You can find my projects here [Ecommerce Website], [project-two], [Bootstrap-5-site],and [CREATIVE-AGENCY-WEBSITE]
+-  I’m currently working on finding my first job as Frontend Developer.
 - 🌱 I’m currently learning Javascript and React JS
 - 👯 I’m looking to collaborate on Javascript Projects
 - 🤔 I’m looking for help with Frontend Technologies
@@ -42,4 +42,5 @@ Email: abdullahitangishaka@gmail.com
 [Ecommerce Website]: https://ecomerce-with-html-and-css.netlify.app/
 [project-two]: https://simple-website-using-html-and-css.netlify.app/
 [Bootstrap-5-site]: https://bootstrap-5-site.netlify.app/
+[CREATIVE-AGENCY-WEBSITE]: https://creative-agency-website2.netlify.app/
 
