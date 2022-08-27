@@ -1,0 +1,13 @@
+
+.menu__item {
+    margin-bottom: 2rem;
+
+    &:hover {
+        font-weight: 500;
+    }
+}
+
+.menu__link {
+    color: inherit;
+    font-size: inherit;
+}

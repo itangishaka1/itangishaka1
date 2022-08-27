@@ -1,0 +1,36 @@
+
+@use '../../global.scss' as *;
+
+.socials{
+    display: none;
+    
+    @include desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 25%;
+    bottom: 9rem;
+  
+
+    & > * {
+        color: $text-color;
+    }
+    & > *:hover {
+        color: $color-orange;
+    }
+
+    &__icon {
+        font-size: 2.2rem;
+    }
+
+    &::after {
+        content: '';
+        width:4px;
+        height: 2rem;
+        background: $text-color;
+    }
+    }
+}
+

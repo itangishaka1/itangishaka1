@@ -1,0 +1,144 @@
+@use "../../global.scss" as *;
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  gap: 4rem;
+
+  @include desktop {
+    flex-direction: row;
+    padding-top: 12rem;
+    justify-content: center;
+  }
+
+  @include tablet {
+    padding-top: 7rem;
+    align-items: flex-start;
+  }
+
+  &__left {
+    flex: 0.5;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+
+    @include tablet {
+      padding-left: 3rem;
+    }
+
+    @include desktop {
+      padding-top: 7rem;
+    }
+  }
+
+  &__hello {
+    padding-bottom: 1rem;
+    letter-spacing: 2px;
+    @include tablet {
+      font-size: 1.7rem;
+    }
+  }
+
+  &__names {
+    text-transform: uppercase;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  &__firstName {
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 2rem;
+    font-weight: 400;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include tablet {
+      font-size: 4rem;
+      letter-spacing: 3.5rem;
+    }
+  }
+
+  &__lastName {
+    display: block;
+    font-size: 1.8rem;
+    letter-spacing: 1.3rem;
+    font-weight: 700;
+
+    animation: moveInRight 1s ease-out;
+
+    @include tablet {
+      font-size: 2rem;
+      letter-spacing: 1.75rem;
+    }
+  }
+
+  &__freelance {
+    margin-bottom: 7rem;
+    padding-top: 1rem;
+
+    @include tablet {
+      letter-spacing: 2px;
+    }
+  }
+
+  &__jobs {
+    color: $color-orange;
+  }
+
+  &__btn {
+    &--animated {
+      animation: moveInBottom 0.5s ease-out 0.75s;
+      animation-fill-mode: backwards;
+    }
+  }
+
+  &__right {
+    flex: 0.5;
+
+    @include tablet {
+      padding: 2rem;
+    }
+
+    @include desktop {
+      padding-top: 7rem;
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+
+    @include tablet {
+      width: 90%;
+    }
+  }
+
+  // &__img {
+  // }
+
+  &__scroll {
+    @include desktop {
+      display: unset;
+      position: absolute;
+      bottom: 12rem;
+      text-align: center;
+      right: 25%;
+      transform: rotate(90deg);
+      font-weight: 300;
+      font-size: 1.8rem;
+      animation: arrowBlink 2s infinite;
+      color: $text-color;
+    }
+
+    display: none;
+  }
+
+  @keyframes arrowBlink {
+    100% {
+      opacity: 0;
+    }
+  }
+}
