@@ -2,8 +2,9 @@ import { useState } from 'react'
 import TopBar from './components/TopBar/TopBar'
 import Menu from './components/Menu/Menu'
 import Intro from './components/Intro/Intro'
-import Try from './components/Try/Try'
+import Contact from './components/Contact/Contact'
 import './App.scss'
+import Portfolio from './components/Portfolio/Portfolio'
 
 const App = () => {
   const [openMenu, setOpenMenu] = useState(false)
@@ -14,7 +15,8 @@ const App = () => {
       <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="sections">
         <Intro />
-        <Try />
+        <Portfolio />
+        {/* <Contact /> */}
       </div>
     </div>
   )

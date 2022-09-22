@@ -1,0 +1,93 @@
+@use '../../global.scss' as *;
+
+.contact  {
+    // @include tablet {
+    //     margin: 0 auto;
+    // }
+    &__header {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5.2rem;
+
+        @include tablet {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    &__options {
+        // display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+    }
+
+    &__option {
+        background-color:$bg-variant;
+        padding: 1.2rem;
+        border-radius: 1.2rem;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: $transition; 
+
+        &:hover {
+            background: transparent;
+            border-color: $primary-variant;
+        }
+
+        &-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        & a {
+            margin-top: 0.7rem;
+            display: inline-block;
+            font-size: 1.28rem;
+            color: $text-color;
+        }    
+    }
+
+    &__form {
+        // display: none;
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2.2rem;
+        padding-bottom: 4rem;
+
+        input, textarea {
+          width: 100%;
+          padding: 1.5rem;
+          border-radius: .5rem;
+          background: transparent;
+          border: 2px solid $primary-variant;
+          resize: none;
+          color: $color-white;
+        }
+    }
+}
+
+// .sent-success {
+//     color: var(--color-primary);
+// }
+
+/* ======= MEDIA QUERIES (MEDIUM DEVICES) ========== */
+// @media screen and (max-width: 1024px){
+//     .container.contact__container {
+//         grid-template-columns: 1fr;
+//         gap: 2rem;
+//     }
+// }    
+
+/* ======= MEDIA QUERIES (SMAILL DEVICES) ========== */
+// @media screen and (max-width: 600px){
+//     .container.contact__container {
+//         width: var(--container-width-sm);
+//     }
+// }
