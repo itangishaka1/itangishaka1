@@ -18,15 +18,13 @@ const Intro = () => {
     <section className="intro container" id="intro">
     
       <div className="intro__left">
-        <h5 className="intro__hello" >Hello I am</h5>
-        <h1 className="intro__names">
-          <span className="intro__firstName">Abdullah</span>
-          <span className="intro__lastName">Itangishaka</span>
+        <h1 className="intro__left-title">
+          Professional Full Stack Developer & Marketing for Startups
         </h1>
-        <h3 className="intro__freelance">
-          Freelance  <span className="intro__jobs" ref={textRef}></span>
-        </h3>
-        <CTA href="#contact" text="Let's Talk" className="intro__btn--animated" />  
+        <span className="intro__left-smallText">
+          Focus on running your business, while I focus on growing it.
+        </span>
+        <a href="#contact" className="intro__left-btn">Contact Me</a>
         <HeaderSocials />
       </div>
       <div className="intro__right">

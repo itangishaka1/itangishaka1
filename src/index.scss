@@ -20,7 +20,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
   font-size: 1.6rem;  
-  color: #F2F2F2;
+  color: #FFF;
+  background-color: #143AA2;
+  // background-image: linear-gradient( to right, rgba(#143AA2, 1), rgba(#3E8DE3, .9));
 }
 
 h1,h2,h3,h4,h5{
@@ -35,7 +37,7 @@ h5 {
 }
 
 h2 {
-  color: #4db5ff;
+  // color: #4db5ff;
   margin-bottom: 3.2rem;
 }
 
@@ -44,25 +46,28 @@ img {
   width: 100%;
 }
 
-.btn{
-  width: max-content;
-  display: inline-block;
-  color: #4db5ff;;
-  padding: 1.2rem 1.9rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid #4db5ff;
-  transition: all 400ms ease;
-}
+// .btn{
+//   width: max-content;
+//   display: inline-block;
+//   // color: #4db5ff;
+//   color: #143AA2;
+//   padding: 1.2rem 1.9rem;
+//   border-radius: 0.4rem;
+//   cursor: pointer;
+//   border: 1px solid #143AA2;;
+//   transition: all 400ms ease;
+// }
 
-.btn:hover{
-  background: #F2F2F2;
-  color:  #1f1f38; 
-  border-color: transparent;
-}
+// .btn:hover{
+//   background: #F2F2F2;
+//   color:  #1f1f38; 
+//   border-color: transparent;
+// }
 
-.btn-primary {
-  background: #4db5ff;
-  color: #1f1f38; 
-}
+// .btn-primary {
+//   // background: #4db5ff;
+//   background: #ed001f;
+//   // color: #1f1f38; 
+//   color: #1f1f38; 
+// }
 

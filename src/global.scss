@@ -21,12 +21,19 @@ $container-width-sm: 90%;
 }
 
 //  ----- Screen sizes ------
+$desktop-lg-breakpoint: 1440px;
 $desktop-breakpoint: 1024px;
 $tablet-breakpoint: 768px;
 
 
 @mixin desktop {
     @media screen and (min-width: $desktop-breakpoint) {
+      .container { width: $container-width-lg;}
+        @content;
+    }
+}
+@mixin desktopLG {
+    @media screen and (min-width: $desktop-lg-breakpoint) {
       .container { width: $container-width-lg;}
         @content;
     }

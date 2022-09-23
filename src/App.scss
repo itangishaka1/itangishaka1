@@ -1,4 +1,3 @@
-@use './global.scss' as * ;
 
 .App {
     height: 100vh;
@@ -8,9 +7,7 @@
         height: calc(100vh - 7rem);
         position: relative;
         top: 7rem;
-        scroll-behavior: smooth;        
-        background-color: $bg-color;
-        background-image: url(./assets/bg-texture.png);
+        scroll-behavior: smooth;      
 
         scroll-snap-type: y mandatory;  
         scrollbar-width: none;  // for firefox
@@ -20,7 +17,6 @@
         } 
 
         > * {
-            // width: 100vw;
             height: calc(100vh - 7rem);
             scroll-snap-align: start;
         }

@@ -1,8 +1,12 @@
 @use "../../global.scss" as *; 
 
 .topBar {
-    background-color: $color-orange;
-    color: $primary-color;
+    // background-color: $color-orange;
+    background-color: #143AA2;
+    // background-color: #D3D4D7;
+    // background-color: #3E8DE3;
+    // color: rgba(255, 255, 255, 0.822);
+    color: #fff;
     width: 100%;
     height: 7rem;
     position: fixed;
@@ -10,6 +14,7 @@
     z-index: 3;
     transition: all 1s ease;
     padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
     @include tablet {
         padding-left: 2rem;
@@ -23,16 +28,26 @@
     }
 
     &__left {
+        height: 100%;
         @include tablet {
             display: flex;
+            justify-content: space-between;
         }
     }
 
     &__logo {       
-            font-size: 2rem;
             color: inherit;
             font-weight: bold;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: 4px;
 
+            &:hover {
+                color: #E3943E;
+            }
+    
             @include tablet {
                 font-size: 2.5rem;
             }
@@ -44,8 +59,11 @@
 
     &__contact {
         display: none;
+        &:hover {
+            color: orange;
+        }
 
-        @include tablet {
+        @include desktop {
             display: unset;
         
         display: flex;
@@ -80,22 +98,23 @@
         span {
             width: 100%;
             height: 0.3rem;
-            background-color: $primary-color;
+            background-color: rgba(255, 255, 255, 0.822);
             transform-origin: left;
             transition: all 2s ease;
         }
     }
 
     &.active {
-        background-color: $primary-color;
-        color: $color-orange;
+        background-color: #3E8DE3;
+        color: #000;
+
 
         .line1{
-            background-color: $color-white;
+            background-color: #E3943E;
             transform: rotate(45deg);
         }
         .line3 {
-            background-color: $color-white;
+            background-color: #E3943E;
             transform: rotate(-45deg);
         }
         .line2 {
