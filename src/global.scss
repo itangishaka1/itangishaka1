@@ -41,7 +41,7 @@ $tablet-breakpoint: 768px;
 
 @mixin tablet {
     @media screen and (min-width: $tablet-breakpoint) {
-        .container { width: $container-width-md;}
+        // .container { width: $container-width-md;}
         @content;
     }
 }
