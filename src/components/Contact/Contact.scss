@@ -8,8 +8,11 @@
         gap: 2rem;
         margin-bottom: 10rem;
 
-        @include desktop {
+        @include tablet {
             width: 58%;
+        }
+
+        @include desktop {
             grid-template-columns: 30% 58%;
             gap: 12%;
         }

@@ -1,13 +1,10 @@
 import { useState, useEffect  } from 'react'
-import ONG from '../../assets/image1.png'
 import PortfolioListItem from '../PortfolioList/PortfolioListItem'
 
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
 } from '../../data'
 
 import './Portfolio.scss'
@@ -24,16 +21,9 @@ const Portfolio = () => {
         case 'web':
             setData(webPortfolio)
             break
-        // case 'mobile':
-        //     setData(mobilePortfolio)
-        //     break
         case 'design':
             setData(designPortfolio)
             break
-//         case 'content':
-//             setData(  contentPortfolio,
-// )
-//             break
         default:
             setData(featuredPortfolio)    
     }
@@ -49,18 +39,10 @@ const Portfolio = () => {
       id: 'web',
       title: 'Web App',
     },
-    // {
-    //   id: 'mobile',
-    //   title: 'Mobile App',
-    // },
     {
       id: 'design',
       title: 'Design',
     },
-    // {
-    //   id: 'content',
-    //   title: 'Content',
-    // },
   ]
   return (
     <section className='portfolio container' id='portfolio'>
@@ -91,26 +73,6 @@ const Portfolio = () => {
           </div>
         </article>
         ))}
-        {/* <div className='portfolio__item'>
-          <img src={ONG} alt='ONG app' className='portfolio__img' />
-          <h3 className='portfolio__item-title'>ONG App</h3>
-        </div>
-        <div className='portfolio__item'>
-          <img src={ONG} alt='ONG app' className='portfolio__img' />
-          <h3 className='portfolio__item-title'>ONG App</h3>
-        </div>
-        <div className='portfolio__item'>
-          <img src={ONG} alt='ONG app' className='portfolio__img' />
-          <h3 className='portfolio__item-title'>ONG App</h3>
-        </div>
-        <div className='portfolio__item'>
-          <img src={ONG} alt='ONG app' className='portfolio__img' />
-          <h3 className='portfolio__item-title'>ONG App</h3>
-        </div>
-        <div className='portfolio__item'>
-          <img src={ONG} alt='ONG app' className='portfolio__img' />
-          <h3 className='portfolio__item-title'>ONG App</h3>
-        </div> */}
       </div>
     </section>
   )

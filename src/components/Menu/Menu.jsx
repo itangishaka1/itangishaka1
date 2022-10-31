@@ -6,6 +6,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
     <div className={'menu ' + (openMenu && "active")}>
         <ul className='menu__list'>
             <MenuItem href="#intro" text="Home"  setOpenMenu={setOpenMenu} />
+            <MenuItem href="#experience" text="Experience"  setOpenMenu={setOpenMenu} />
             <MenuItem href="#portfolio" text="Portfolio"  setOpenMenu={setOpenMenu} />
             <MenuItem href="#contact" text="Contact"  setOpenMenu={setOpenMenu} />
         </ul>

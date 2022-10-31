@@ -29,8 +29,12 @@
         margin-bottom: 6rem;
 
         @include tablet {
-            // flex-direction: row;
+            flex-direction: row;
             gap: 2rem;
+
+        }
+        @include desktop {
+            gap: 3rem;
 
         }
     }
@@ -38,8 +42,13 @@
     &__socials {
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 2rem;
         margin-bottom: 6rem;
+
+        @include desktop {
+            gap: 3rem;
+
+        }
 
         &__icon {
             font-size: 2rem;

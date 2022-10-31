@@ -9,7 +9,9 @@ const Intro = () => {
         <h1 className='intro__left-title'>Professional Full Stack Developer</h1>
         <span className='intro__left-smallText'>
           A website or Web App should be a solution - not a problem.
+          
         </span>
+        {/* <span className='intro__left-smallText'></span> */}
         <a href='#contact' className='intro__left-btn'>
           Contact Me
         </a>

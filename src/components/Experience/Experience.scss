@@ -1,0 +1,70 @@
+@use '../../partials/variables' as *;
+@use '../../partials/mixins' as *;
+
+.experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+
+  @include desktop {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  & > div {
+    background-color: $background;
+    width: 100%;
+    padding: 2rem 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: $transition;
+
+    &:hover {
+      background: transparent;
+      border-color: $background;
+      cursor: default;
+    }
+
+    @include tablet {
+      width: 80%;
+      padding: 2rem;
+      margin: 0 auto;
+    }
+
+    @include desktop {
+      padding: 2.4rem 5rem;
+    }
+
+    & h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+
+    @include tablet {
+        padding: 1rem;
+    }
+  }
+
+  &__details {
+    display: flex;
+    gap: 1rem;
+
+    small {
+        color: lightgray;
+    }
+
+    &-icon {
+        margin-top: 0.6rem;
+        color: $color-orange;
+    }
+  }
+
+  &__client h3, &__backend h3 {
+    color: $color-orange;
+  }
+}
