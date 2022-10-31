@@ -24,16 +24,16 @@ const Portfolio = () => {
         case 'web':
             setData(webPortfolio)
             break
-        case 'mobile':
-            setData(mobilePortfolio)
-            break
+        // case 'mobile':
+        //     setData(mobilePortfolio)
+        //     break
         case 'design':
             setData(designPortfolio)
             break
-        case 'content':
-            setData(  contentPortfolio,
-)
-            break
+//         case 'content':
+//             setData(  contentPortfolio,
+// )
+//             break
         default:
             setData(featuredPortfolio)    
     }
@@ -49,22 +49,23 @@ const Portfolio = () => {
       id: 'web',
       title: 'Web App',
     },
-    {
-      id: 'mobile',
-      title: 'Mobile App',
-    },
+    // {
+    //   id: 'mobile',
+    //   title: 'Mobile App',
+    // },
     {
       id: 'design',
       title: 'Design',
     },
-    {
-      id: 'content',
-      title: 'Content',
-    },
+    // {
+    //   id: 'content',
+    //   title: 'Content',
+    // },
   ]
   return (
     <section className='portfolio container' id='portfolio'>
-      <h1 className='portfolio__heading'>Portfolio</h1>
+      <h5>my recent work</h5>
+      <h2>Portfolio</h2>
       <ul className='portfolio__list'>
         {list.map((item) => (
           <PortfolioListItem
@@ -78,10 +79,17 @@ const Portfolio = () => {
       </ul>
       <div className='portfolio__wrapper'>
         {data.map( d => (
-        <div className='portfolio__item' key={d.id}>
-          <img src={d.img} alt={d.title} className='portfolio__img' />
-          <h3 className='portfolio__item-title'>{d.title}</h3>
-        </div>
+        <article className='portfolio__item' key={d.id}>
+          <div className="portfolio__img">
+            <img src={d.img} alt={d.title} />
+          </div>
+          <h3 className='portfolio__item__title'>{d.title}</h3>
+          <div className="portfolio__item__cta">
+            <a href={d.github} className='btn' target='_blank'>Github</a>
+            <a href={d.demo} className='btn btn-primary ' target='_blank'>Live Demo</a>
+            <a href=""></a>
+          </div>
+        </article>
         ))}
         {/* <div className='portfolio__item'>
           <img src={ONG} alt='ONG app' className='portfolio__img' />

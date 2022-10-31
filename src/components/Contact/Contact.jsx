@@ -6,7 +6,8 @@ import { BsWhatsapp } from 'react-icons/bs'
 
 // email
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser';
+// import emailjs from 'emailjs-com'
 
 // Notification
 import { ToastContainer, toast } from 'react-toastify';
@@ -19,54 +20,66 @@ const Contact = () => {
   const notify = () => toast.success("Message sent successfully 👌!");
   const notifyError = () => toast.error("Error!! please use email or whatsapp to contact me")
 
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+  //     .then((result) => {
+  //         // console.log(result.text);
+  //         notify()
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //       notifyError()
+  //     });
+
+  //     e.target.reset()
+  // };
+
   const sendEmail = (e) => {
     e.preventDefault();
-  
+
     emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
       .then((result) => {
           // console.log(result.text);
           notify()
-      })
-      .catch((error) => {
-        console.log(error);
-        notifyError()
+      }, (error) => {
+          // console.log(error.text);
+          notifyError()
       });
 
       e.target.reset()
   };
 
   return (
-    <section id='contact'  className=" container contact">
-      <div className="contact__header">
-          <h5>Get In Touch</h5>
-          <h2>Contact Me</h2>
-      </div>
+    <section id='contact'>
+      <h5>Get In Touch</h5>
+      <h2>Contact Me</h2>
 
-      <div className="contact__container">
+      <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
-            <MdOutlineEmail  className='contact__option-icon'/>
+            <MdOutlineEmail  className='contact__option__icon'/>
             <h4>Email</h4>
-            <h5>abdullah@gmail.com</h5>
+            <h5>info@itangishak.com</h5>
             <a href="mailto:abdullah@gmail.com" target="_blank">Send a message</a>
           </article>
           <article className="contact__option">
-            <AiOutlineLinkedin className='contact__option-icon'/>
+            <AiOutlineLinkedin className='contact__option__icon'/>
             <h4>LinkedIn</h4>
             <h5>itangishaka</h5>
             <a href="https://www.linkedin.com/in/itangishaka/" target="_blank">Send a message</a>
           </article>
           <article className="contact__option">
-            <BsWhatsapp className='contact__option-icon'/>
+            <BsWhatsapp className='contact__option__icon'/>
             <h4>Whatsapp</h4>
             <h5>+1 (437) 345 9921</h5>
             <a href="https://api.whatsapp.com/send?phone=14373459921" target="_blank">Send a message</a>
             {/* <div class="elfsight-app-918f5361-5038-4a37-b32c-18abff28545d"></div> */}
           </article>
         </div>
-        <form ref={form} onSubmit={sendEmail} className="contact__form"> 
-          <input type="text" name="name" placeholder='Your Full Name' required />
-          <input type="email" name="email" placeholder='Your Email' required />
+        <form ref={form} onSubmit={sendEmail}> 
+          <input type="text" name="user_name" placeholder='Your Full Name' required />
+          <input type="email" name="user_email" placeholder='Your Email' required />
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <ToastContainer  
             position="bottom-right"

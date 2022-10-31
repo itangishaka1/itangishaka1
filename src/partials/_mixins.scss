@@ -1,0 +1,20 @@
+@use '../partials/variables' as *;
+
+
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+@mixin desktopLG {
+    @media screen and (min-width: $desktop-lg-breakpoint) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}

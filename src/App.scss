@@ -1,24 +1,24 @@
 
-.App {
-    height: 100vh;
+// .App {
+//     height: 100vh;
 
-    .sections {
-        width: 100%;
-        height: calc(100vh - 7rem);
-        position: relative;
-        top: 7rem;
-        scroll-behavior: smooth;      
+//     .sections {
+//         width: 100%;
+//         height: calc(100vh - 7rem);
+//         position: relative;
+//         top: 7rem;
+//         scroll-behavior: smooth;      
 
-        scroll-snap-type: y mandatory;  
-        scrollbar-width: none;  // for firefox
-        // for other browsers
-        &::-webkit-scrollbar{
-            display: none;
-        } 
+//         scroll-snap-type: y mandatory;  
+//         scrollbar-width: none;  // for firefox
+//         // for other browsers
+//         &::-webkit-scrollbar{
+//             display: none;
+//         } 
 
-        > * {
-            height: calc(100vh - 7rem);
-            scroll-snap-align: start;
-        }
-    }
-}
+//         > * {
+//             height: calc(100vh - 7rem);
+//             scroll-snap-align: start;
+//         }
+//     }
+// }

@@ -1,8 +1,8 @@
-@use '../../global.scss' as *;
+@use '../../partials/variables' as *;
 
 .portfolioListItem {
   font-size: 1.4rem;
-  margin-right: 5rem;
+  // margin-right: 5rem;
   padding: 0.7rem;
   border-radius: 1rem;
   cursor: pointer;
