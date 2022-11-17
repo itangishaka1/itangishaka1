@@ -6,7 +6,7 @@ const Intro = () => {
   return (
     <section className='intro container' id='intro'>
       <div className='intro__left'>
-        <h1 className='intro__left-title'>Professional Full Stack Developer</h1>
+        <h1 className='intro__left-title'>Professional <br />Web Developer</h1>
         <span className='intro__left-smallText'>
           A website or Web App should be a solution - not a problem.
           

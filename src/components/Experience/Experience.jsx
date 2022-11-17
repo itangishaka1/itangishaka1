@@ -41,7 +41,7 @@ const Experience = () => {
             <Skill title='EXPRESS JS' experience='Intermediate'>
               <BsPatchCheckFill className='experience__details-icon' />
             </Skill>
-            <Skill title='MYSQL' experience='Intermediate'>
+            <Skill title='MYSQL' experience='Beginner'>
               <BsPatchCheckFill className='experience__details-icon' />
             </Skill>
             <Skill title='MONGODB' experience='beginner'>

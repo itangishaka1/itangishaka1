@@ -19,7 +19,7 @@ const TopBar = ({ openMenu, setOpenMenu }) => {
           </a>
           <a href="mailto:abdullah@gmail.com" target="_blank" className="topBar__contact">
             <AiOutlineMail className='topBar__icon'/>
-            <span>info@itangishak.com</span>
+            <span>abdullahitangishaka@gmail.com</span>
           </a>
         </div>
         <div className="topBar__right">
